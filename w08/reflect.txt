@@ -1,0 +1,100 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #8
+Full Name  : Navnoor Singh
+Student ID#: 160821211
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+
+1. So, if we're talking about the minimum memory allocation that struct ReportData would require is :
+    int : 4 bytes, char : 1 byte, double : 8 bytes
+    so, 
+    int sku;                      4 bytes
+    double pPrice;                8 bytes
+    int calPerServing;            4 bytes
+    double weightLbs;             8 bytes
+    double weightKgs;             8 bytes
+    int weightGs;                 4 bytes
+    double totalServings;         8 bytes
+    double costPerServing;        8 bytes
+    double costCalPerServings;    8 bytes
+    -------------------------------------
+    TOTAL                        60 bytes
+
+    total memory allocation required for struct ReportData is 60 bytes.
+
+    However, if we really need to improve the data management, we should consider passing data by address instead of value.
+    Because while passing by value, system creates a copy of the data and store it somewhere on the memory, which needs even more space , but that's not the case in passing by address. In this we can access the original value and change them from within the function.
+
+
+2.  The struct ReportData has some common members of CatFoodData, so to improve 
+    this, we can add the struct CatFoodInfo inside the other struct called ReportData so that we don't have deal with redundent code. I thought about this while coding w8p2, since it was explicitly mentioned that create a new struct, I didn't try that.
+
+    To upgrade our displayReportData function, we just need to consider the new big struct instead of two
+
+    This is our new struct:
+
+struct CatFoodInfo
+    {
+    int sku;
+    double price;
+    int calories;
+    double weightLbs;
+    };
+
+struct ReportData
+    {
+    struct CatFoodInfo catfoodinfo;
+    double weightKgs;
+    int weightGs;
+    double totalServings;
+    double costPerServing;
+    double costCalPerServings;
+    };
+ This is our new improved data structure.
+ So now our new function will kinda look like this:
+
+
+ void displayReportData(const struct ReportData rprtdata, const int finalOption)
+{
+
+    
+    printf("%07d %10.2lf %10.1lf % 10.4lf %9d %8d %8.1lf %7.2lf %7.5lf ", 
+    rprtdata.catfoodinfo.sku,             (new)
+    rprtdata.catfoodinfo.price,           (new)
+    rprtdata.catfoodinfo.weightLbs,       (new)
+    rprtdata.catfoodinfo.calories,        (new)
+    rprtdata.weightKgs, 
+    rprtdata.weightGs, 
+    rprtdata.totalServings, 
+    rprtdata.costPerServing, 
+    rprtdata.costCalPerServings);
+    
+    
+    if(finalOption != 0)
+    {
+        printf("***");
+        
+    }
+    putchar('\n');
+}
+
+This will be the final result after the changes.
+
+
+
+
+
+
+
+
+
+
+
+
+

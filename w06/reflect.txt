@@ -1,0 +1,46 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #6
+Full Name  : Navnoor Singh
+Student ID#: 160821211
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+
+
+
+
+1.In workshop 6 Part 2, Parallel arrays are used and to access them or to get the values from the user, a variable is used called I (iterator) Which is in a for loop which constantly changes the value of I according to the array index we want to access. this is the key to accomplish this.
+
+
+
+2.It's a common practice to iterate arrays by initializing the iterator to 0 because in C language arrays start from zero, therefore the value of i is working as the index number, therefore it must start from zero to get the value of first item of the array which is indexed at i = 0  .
+Here’s an example I’ve used in the workshop:
+
+This is the code used to summarize parallel arrays:
+
+for (i = 0 , total = 0 ; i  <  itemCount ; i++)
+    {
+        printf("%3d  %5d    %5c    %11.2lf\n", i + 1, itemPriority[i], itemFinance[i], itemCost[i]);
+        total += itemCost[i]; 
+    }
+printf(“  $%11.2lf\n\n", total);
+
+
+
+3.   Basically, array is just a group of similar things which are always one after another.
+For example, in a school there are many different classrooms, in this case school is an 
+array, and the classrooms are the things contained in the array. To go to the classroom, 
+we must know the class number, which in the case of array is the index number.
+Index number of one thing is always one less than the number we think, just like the floors 
+a; building in which the floor number of the floor in which we enter is written as zero in the
+elevator and if we go to the second floor, we have to press 1 in the lift. Same thing applies 
+with the array.
+
+
+
+

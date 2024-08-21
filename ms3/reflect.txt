@@ -1,0 +1,73 @@
+*****************************************************************************
+                               Reflection
+                             Assignment 1 - Milestone 3
+Full Name  : Navnoor Singh
+Student ID#: 160821211
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+
+
+1: Here are some functions that made some difference in milestone-3
+
+i:  int checkValidTimeslot(struct Time inputTime);
+
+This function is checking valid empty time slots while adding new appointments in the program. The developer can repurpose this function while validating new time stamps at any other function too.
+It's checking if the entered time slot is during the working hours of the veterinary hospital. also, it's making sure that the entered time is in 30mins intervals.
+A flag valid is used to determine the exit.
+first, it's initialized to 1, but if the time stamp is not valid, it'll be turned off to 0.
+hence, the final value will be returned as an integer.
+
+
+ii:  void sortData(struct Appointment appoins[], int max);
+
+This function uses the bubble sort technique to sort elements of an array.
+first, this function gets an array with its maximum length.
+The function bubble sort's goal is to logically order the appointments (from the earliest to the latest), enabling the user to view all appointments in a well-organized manner. Additionally, sorting the data can make it simpler for the user to comprehend the information. Since the list of appointment dates is arranged chronologically, for instance, the user can locate the next appointment date for particular patients.
+
+
+iii:  int timeCompare(struct Time* firstTime, struct Time* secondTime);
+
+This function compares the first given time with the second one and returns different integers as results.
+In this, if the first time is after the second time, the function will return 1, if the times are the same then 0 and at last, if the first time is before the second, -1 will be returned
+
+
+
+2: The function appointment does many things which first starts from getting an empty index for the new assignment which is being done by a function called findNextEmptyIndex.
+
+In total, the addAppointment functions are spread along 106 lines in the clinic.c file, but if we plan to do it without using separate functions, it'll be twice, or maybe, thrice the size it is now.
+
+First I packed around 15 lines in findNextEmptyIndex which at first doesn't seem much, but this code can be used multiple times so it only makes sense to call the function and not create redundancy.
+
+Then, In checkExistingAppintment, I again saved 20-25 lines of code which checks for any existing appointment in the array.
+
+We can see a similar trend in checkValidTimeslot in which the function checks if the newly selected time slot is already booked or not.
+
+In the end, the code is about 50% smaller than it would be without functions.
+
+all of these functions can be used in various places that's why I put them in the utility functions.
+
+Moreover, code is far more readable with the use of functions as the reader can quickly glance through the whole process and figure it out, thanks to self-descriptive function naming.
+
+
+
+3: To accomplish the work for this milestone on time, I realised that I would need to manage my time wisely. I divided the chores into more manageable chunks after carefully reading the milestone's directions. This made it possible for me to concentrate on doing each component one at a time, beginning with the simpler tasks and working my way up to the more difficult ones.
+
+I was aware that I would need to use time management skills in order to do the job for this milestone on schedule. After carefully reading the milestone's requirements, I divided the work into more digestible chunks. As a result, I was able to concentrate on finishing each portion separately, working my way up to the more difficult tasks after doing the simpler ones.
+
+I also made sure that I used camelCase everyTime I write a variable in my code, due to the fact that, it makes it much more readAble, and also my professor loves it! :)
+
+I was able to effectively finish the work for this milestone on schedule by employing efficient time management techniques and asking my classmates and lecturer for assistance when I needed it. Even though there were some difficulties along the way, by remaining persistent and focused, I was able to get beyond them.
+
+At the end of this course when I look back at myself 4 months ago, I can feel the improvement which I gained and all thanks to the best professor I've ever met.
+
+
+
+
+
+
+
