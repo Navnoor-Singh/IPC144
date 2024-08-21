@@ -1,0 +1,43 @@
+*****************************************************************************
+                              Reflection
+                          Workshop - #3 (P2)
+Full Name  : Navnoor Singh
+Student ID#: 160821211
+Email      : nsingh391@myseneca.ca
+Section    : ZBB
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+
+
+Q1. ((coffeeStrength == 'm' || coffeeStrength == 'M')  &&  (productTypeC1 == 'l' || productTypeC1 == 'L' )) || 
+    ((coffeeStrength == 'r' || coffeeStrength == 'R')  &&  (productTypeC1 == 'b' || productTypeC1 == 'B' )),
+
+    	In this workshop, This expression was the most time consuming for me, as It was the first expression 
+	for the preference table I was not quite sure what to do, First I tried to compare every possible outcome
+	with the help of OR expression for every variable, then I figured out that, I just had to compare the user
+	Preferred values to the actual values of the products. After some time, I came up with this expression which 
+	worked exactly like I wanted.
+
+
+
+Q2. Let's take this expression from my code: (dailyServings > 0 && dailyServings <= 4 && productWeightC1 == 250);
+
+	with De-morgan's law: !(dailyServings < 0 && dailyServings >= 4 || productWeightC1 != 250);     // First way
+
+	with this law the desired result did not change as every operator is altered and with the not(!) in the starting, everything again got fine.
+
+	Here's an another example : !(dailyServings > 0 && dailyServings <= 4) && !(productWeightC1 == 250);     //Second way
+
+
+
+Q3.     In W03P01 I used a variable called 'average' due to the fact that, it might be used in many places to address 
+	the average value, and making the whole calculation and printing it afterwards is far more practical and easy 
+	then making calculations in every printf statements. In overall making calculation in lines would've made the
+	code more cluttered whereas in part-2 Fahrenheit is only printed and used in one table and making separate 
+	calculation would just decrease the readability of the code, while doing in line calculations, reader can 
+	also find the formula, and it'll make code more understandable.

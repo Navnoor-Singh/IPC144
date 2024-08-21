@@ -1,0 +1,14 @@
+In line number 58 of your output:
+The output should be:
+Pick some CABBAGES... how many did you pick? : 0
+^
+But your output is: 
+
+ ^
+
+Unmatched character details:
+The character in column 2 is supposed to be:
+  [P] ASCII code(80)
+but you printed
+  [Empty Line] ASCII code(0)
+

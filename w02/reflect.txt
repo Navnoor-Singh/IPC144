@@ -1,0 +1,70 @@
+*****************************************************************************
+                              Reflection
+                          Workshop - #2 (P2)
+Full Name  : Navnoor Singh
+Student ID#: 160821211
+Email      : nsingh391@myseneca.ca
+Section    : ZBB
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+1. In the given piece of code prices are defined in doubles and in the next formula, "cents = (int)(price2 * 100);" the double is getting casted into an integer. Due to which its getting truncated, hence losing some part of data. With this, at the end, 10.12 becomes 10.00, hence the precision is lost and it will not show the actual cents of the price. To solve this problem, we just have to manually round-up the number by 0.5(if the number is in cents) or 0.005(if it's in dollars).
+
+2. 
+
+**providing the necessary Information only as per the question:**
+
+
+Int noteCountTwenty, noteCountFifty, noteCountTen, noteCountFive, balance;
+Int initialAmount = 20;
+const int fifty = 50;
+const int twenty = 20;
+const int ten = 10;
+const int five = 5;
+
+      
+
+     balance = initialAmount;
+          noteCountFifty = balance / fifty;
+          balance = balance % fifty;
+      printf("fifties  %3d %3d\n",  noteCountFifty, balance);
+
+
+          noteCountTwenty = balance / twenty;
+          balance = balance % twenty;
+      printf("twenties  %3d %3d\n",  noteCountTwenty, balance);
+
+
+          noteCountTen = balance / ten;
+          balance = balance % ten;
+      printf("tens  %3d %3d\n",  noteCountTen, balance);
+
+
+          noteCountfive = balance / five;
+          balance = balance % five;
+      printf("fives  %3d %3d\n",  noteCountFive, balance);
+
+
+
+3. Int priceCents = 7245;
+
+
+1: printf("Price: $%7.2lf\n", (double)priceCents / 100);
+2: printf("Price: $%7.2lf\n", priceCents / (double)100);
+3: printf("Price: $%7.2lf\n", priceCents / 100.0 );
+
+
+
+
+
+
+
+
+
+
+
+

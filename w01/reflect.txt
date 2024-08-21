@@ -1,0 +1,21 @@
+****************************************************************************
+                              Reflection
+                             Workshop - #1
+Full Name  : Navnoor Singh
+Student ID#: 160821211
+Email      : nsingh391@myseneca.ca
+Section    : ZBB
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+****************************************************************************
+
+
+
+1: In this class, I've learned many things such as basics of of C programming language and also how to connect to Seneca Matrix with SSH. It really helped me to polish my C programming skills and taught me how to use SSH properly.
+
+2: SSH, also called as Secure Socket Shell, is a web protocol that allows users, notably system administrators, to access a computer securely over an insecure network. In this workshop it enables me to transfer files between a machine and Seneca's matrix servers.
+
+3: In order to offer a high level of security for transmitting and receiving file transfers, the Secure File Transfer Protocol, or SFTP, employs secure shell encryption. Transfering files in this workshop is only possible due to this. It plays a vital role in this subject.

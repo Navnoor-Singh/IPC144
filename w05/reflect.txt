@@ -1,0 +1,61 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #5
+Full Name  : Navnoor Singh
+Student ID#: 160821211
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+1.	To map the month integer value to the first three characters of the month we can use two possible constructs the one is a switch case and another one is just if else is on top of each other. in my case I use the switch case as it's far more readable than a bunch of if else is.
+
+In a switch case, first a variable is set as a switch and when it's triggered as per our requirement and the value also matches with the case, it will do the certain amount of expression whichever is given in that particular case.
+Here’s a short example to demonstrate switch to write last two months:
+
+SWITCH:
+int yearNumber, monthNumber;
+
+switch(monthNumber)
+{
+case 1 :
+             printf("Log starting date: %d-NOV-01\n", yearNumber);
+             break;
+             
+case 2 :
+             printf("Log starting date: %d-DEC-01\n", yearNumber);
+             break;
+             
+default:
+             break;
+}
+
+However, the same thing can be also achieved by using IF ELSE construct. The logic behind is the same but it's just the syntax and execution which is different from a switch statement. In this the compiler checks every single time if the number is the same that we want if it's not, the result will come out false and it will move to the next IF until it finds the correct answer and display the solution.
+
+Here’s a short example to demonstrate IF ELSE to write last two months:
+
+Int yearNumber, monthNumber;
+If( monthNumber == 11)
+{
+printf("Log starting date: %d-NOV-01\n", yearNumber);
+}
+Elseif( monthNumber == 12)
+{
+printf("Log starting date: %d-DEC-01\n", yearNumber);
+}
+
+2.	There are three types of iteration constructs in C programming languages first one is DO-WHILE second is WHILE and the third one is a FOR loop. An iteration is required to validate the values entered by the user because the person using the application could make a mistake while entering the values and sometimes just fill up the wrong values for that, the program should display an error message and repeat the code again, for this repetition, an iteration is used.
+
+In my code for validating routines, I used a DO-WHILE iteration. the main big reason behind that is first it's easy to use and, in a DO-WHILE the program does something before validating that it's the same thing that we want or not. Because the program must run at least once before checking that user has put a correct value or not on the other hand, WHILE loop checks the user input first and then execute the program and that's not what we want.
+
+
+
+3.	While coding workshop five Part 2 first it seemed easy but after a while things started to mess up, I just wrote a bunch of code, and I hoped it would work but it had many bugs. to resolve those problems first I check that are members syntactic or semantic. 
+
+In syntactic errors I just checked the syntax of my code such as finding a missing semi-colon, checking defined values, looking for undeclared variable names and the last making sure that my code has a return statement. Most of these problems can be resolved with the help of the IDE, because if there is a single error in the syntax the compiler will just throw an error.
+
+On the other hand, semantic errors are those which the compiler cannot find out such as using incorrect logic etc. To resolve these problems, I used white box testing which really helped me out. when I was calculating the total ratings in the end, I had a hard time keeping total values in check, for that I added printf statements after every single expression that could go wrong at the end compiler revealed that I'm not adding the values every single time.
+
+

@@ -1,0 +1,104 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #4
+Full Name  : Navnoor Singh
+Student ID#: 160821211
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+1: Selection is an extremely important part of C programming, it's the rudimentary level of providing logic two our code. With the help of this We can make our code work in different ways as per the user’s choice for example, in sequential coding the code is only running in One Direction, however in selection the flow of code depends on an expression. here are some selection coding examples from my own code.
+
+Example 1).  if(numberofApples < 0)
+             {
+               printf("ERROR: Value must be 0 or more.\n");
+             }
+In this piece of code, the flow of code is determined by this if statement,
+ which is also a selectional code. In a simple way, if the number of apples 
+is less than zero only then the code between the braces will get executed, 
+otherwise it will just continue with the rest of the logic.
+For me, it really helped while I had to make sure that if the number of 
+apples is less than zero my code should print an error message.
+
+Example 2).  if(pickedItems <= 0)
+             {
+               printf("ERROR: You must pick at least 1!\n");
+      	     }
+     			       
+             else
+             {
+               ##CODE##
+             }
+
+This is a similar case as the example one, if the picked items are less than
+ or equal to 0 then the code will print an error however if that's not the 
+case the flow will shift towards the else statement.
+this helped me in the picking process while I should display an error message
+ if the picked items are less than zero or the code should run the rest of the
+ process.
+
+Example 3).  if(pickedItems > numberofApples)
+             {
+               ##Code##
+             }
+                
+             else if((pickedItems > 0) && (pickedItems < numberofApples))
+              {
+                ##Code##
+              }
+
+This selection is kind of a mixture between the example one and two, In this, first
+ the code will check if the big items a is greater than number of apples and if that's
+ true it will run a certain code which is between the parentheses, however in the else
+ statement there is an another if with different condition which states another 
+expression with a different output code. This helped me while I was checking the
+ number of picked apples and evaluating it to make the whole code work.
+
+
+2:    Basically, nested constructs are just many selections and iterations combined with each other while being interdependent to work in a seamless way. 
+
+Example 1).   When I was coding for the picking part, I had to make sure that the number of apples entered is greater than zero. For that I used a “while” loop to check if number of apples are greater than zero than only the next step should execute. In the while loop, first I checked if the picked number of apples is less than zero because if that's the case no picking is done, so the code should repeat itself. However, if the number is greater than zero, I checked if the picking number is greater than the number of required apples or not. If this is true, the code should display an error message that the number of picked apples is greater than needed. eventually in an another if statement if the range off picked apples is between zero and the number of apples is certain code should execute to make the program work and, I've had another case that if the number of picked apples is the same as number of apples the code should exit the loop and move to the next item. all these selections and iterations are required to make a successful nested construct required for picking.
+
+Example 2).   For the whole code there are many nested constructs interconnected with each other but the biggest one which helps to repeat the code if user wants to do another round of shopping is the main repeater construct. in this all selection and picking of products will be done again if the expression in while loop stays true which states that if the value of the variable repeat is greater than zero then the whole code will repeat otherwise it will end.
+
+
+3. There are three types of iterations available in C programming languages but the one I preferred the most is the while loop. there are several reasons behind this but the biggest one is that it's simple and easy to use, for instance, if we want to check something and then do a certain thing after that while loop is our best option as it checks the expression first and then only it executes if the expression is true on the other hand do while loop execute a certain code before checking the expression if it's true or not. As for the third loop which is FOR, it has many other features which could be helpful in some situations, but the while loop can also be adjusted in a certain way to make it work like for and do while. for example, wall picking of the items in my code I had to check if the numberofapples is greater than zero or not because if that is the case the code should not execute the picking code as there is no product to pick. 
+Here is the code example for while loop:
+
+while(numberofApples > 0)          //while loop started and checking if the number of apples is greater than zero or not
+            
+        {
+            printf("Pick some APPLES... how many did you pick? : ");
+            scanf("%d", &pickedItems);
+            
+            if(pickedItems <= 0)
+            {
+                printf("ERROR: You must pick at least 1!\n");
+            }
+            
+            else
+            {
+                if(pickedItems > numberofApples)
+                {
+                    printf("You picked too many... only %d more APPLE(S) are needed.\n", numberofApples);
+                }
+                
+                else if((pickedItems > 0) && (pickedItems < numberofApples))
+                {
+                    printf("Looks like we still need some APPLES...\n");
+                    numberofApples -= pickedItems;
+                }
+                
+                else if((pickedItems > 0) && (pickedItems == numberofApples))
+               {
+                    numberofApples -= pickedItems;
+                    printf("Great, that's the apples done!\n");
+               }
+         }
+            
+  }
+
+     	
